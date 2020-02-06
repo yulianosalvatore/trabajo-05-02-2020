@@ -1,0 +1,90 @@
+body{
+    background-image: url(imagen/fin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor {
+    top:0px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:750px repeat(2, auto);
+    grid-template-areas:"header "
+                        "contenido"
+                        "WORKPLACE";
+    row-gap: 20px;
+                        
+}
+
+header{
+    width: 100%;
+    overflow: hidden;
+    grid-area: header;
+}
+
+h1{
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-align: center  ;
+}
+
+.contenido {
+
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 40px;
+    grid-template-areas:"sala"
+                        "funcion"
+                        "WORKPLACE"
+}
+
+.imgcont1, .imgcont2{
+    border-image: url(imagen/fondo_desc.jpg);
+    border-radius: 10px;
+    z-index: 2;
+    width: 400px;
+    margin: 20px;
+}
+
+#imgarq{
+    border-image: url(../img/marco_f.jpg);
+    width: 400px;
+    box-shadow: 8px 8px 15px black;
+}
+
+#sala {
+    border-image: url(../img/marco_f.jpg);
+    z-index: 2;
+    display: flex;
+    grid-area: sala;
+}
+
+#funcion{
+    z-index: 2;
+    display: flex;
+    grid-area: funcion;
+}
+
+#WORKPLACE {
+    z-index: 2;
+    display: flex;
+    grid-area: WORKPLACE;
+}
+
+.descripcion {
+    color: aliceblue;
+    text-align:justify; 
+    font-weight: 600;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(36, 30, 23, 0.438);
+    background-size: cover;
+}

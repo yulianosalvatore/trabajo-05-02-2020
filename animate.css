@@ -1,0 +1,98 @@
+body{
+    background-image: url(imagenes/holi.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@keyframes rotacion{
+    from{transform: rotateZ(0deg);}
+    to{transform: rotateZ(360deg)}
+}
+@keyframes traslation{
+    
+0%{};
+10%{opacity: 0.8%;}
+25%{ left: 950px;}
+100%{transform: scaleX(-2);}
+50%{left: 1280px;}
+75%{z-index: -2;}
+100%{left: opx;z-index: -6;}
+
+} 
+@keyframes sombra{
+    0%{filter: brightness(1);};
+10%{filter: brightness(1);}
+25%{ filter: brightness(1);}
+50%{filter: brightness(1);}
+75%{opacity: 1;}
+90%{opacity: 0;}
+100%{opacity: 0;}
+}
+@keyframes traslatio{
+    
+    0%{};
+    10%{opacity: 0.8%;}
+    25%{ left: 950px;}
+    100%{transform: scaleX(-2);}
+    50%{left: 1280px;}
+    75%{z-index: -2;}
+    100%{left: opx;}
+    
+    } 
+
+#sol{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 200px;
+    width: 400px;
+    height: 400px;
+    animation-name: rotacion;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+    #tierra{
+        border-radius: 50%;
+    position:absolute;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 0%;
+    left:0px;
+    top: 350px;
+    width: 40px;
+    height: 40px;
+    z-index: 1;   
+    animation-name: traslation;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+
+
+    }
+#am{    border-radius: 50%;
+    position:absolute;
+    margin-left: auto;
+    margin-right:auto;
+    padding:3%;
+    left:7px;
+    top: 300px;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    animation-name: sonbra;
+    animation-duration: 1s;    
+    animation-name: traslatio;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+   
+    }
+    #img_tierra{
+        animation-name: sombra;
+        animation-duration: 9s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }

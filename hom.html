@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOM</title>
+    <link rel="stylesheet" href="hom.css">
+    <link rel="icon" href="imagen/logo.png">
+</head>
+
+<body>
+
+    <div class="grid">
+        <div class="a">
+            <!-- nav -->
+            <header>
+                <input type="checkbox" id="btn-menu">
+                <label for="btn-menu"> <img  src="imagen/ico.png" style="width:30px" height="30px"alt="">
+                </label>
+
+                <nav class="menu">
+                    <ul>
+						<li><a href="hom.html">INICIO</a></li>
+                        <li><a href="cartelera.html">EN CARTELERA</a>
+                            <!-- <ul>
+                                <li><a href="cartelera.html">DOLITTLE</a></li>
+                                <li><a href="cartelera.html">BAD BOYS</a></li>
+                                <li><a href="cartelera.html">EL CAZADOR</a></li>
+                                <li><a href="cartelera.html">ALADDIN</a></li>
+                                <li><a href="cartelera.html">ALITA</a></li>
+                                <li><a href="cartelera.html">AVES DE PRESA</a></li>
+                            </ul> -->
+                        </li>
+                        <li><a href="proximos.html">PROXIMAMENTE</a>
+                            <!-- <ul>
+                                <li><a href="proximos.html">THE AVENGERS</a></li>
+                                <li><a href="proximos.html">AVENGERS LA ERA DE ULTRÓN</a></li>
+                                <li><a href="proximos.html">AVENGERS INFINITY WAR</a></li>
+                                <li><a href="proximos.html">AVENGERS END GAME</a></li>
+                            </ul> -->
+                        </li>
+                        <li><a href="reservas.html">RESERVAS</a>
+                            <!-- <ul>
+                                <li><a href="reservas.html">FUNCIÓN</a></li>
+                                <li><a href="reservas.html">SALA</a></li>
+                                <li><a href="reservas.html">WORKPLACE</a></li>
+                            </ul> -->
+                        </li>
+                        <li><a href="animate.html">ABOUTRE</a>
+                            <!-- <ul>
+                                <li><a href="#">Jajajajajaja</a></li>
+                            </ul> -->
+                        </li>
+                        <li><a href="#">BIENVENIDO :</a> </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <!-- fin del nav -->
+
+        <!-- inicio contenido -->
+
+        <!-- -----------------------------------------------Slides de en CARTELERA---------------------------------------------------------- -->
+        <div class="b">
+            <h1 class="titulo2">EN CARTELERA </h1>
+
+
+            <!-- Contenedor de las atracciones -->
+            <div class="container">
+                <!-- Imagenes de tamaño completo con el numero de la imagen -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 5</div>
+                    <a href="cartelera.html"><img src="imagen/e1.jpg" style="width:100%" height="20%"></a>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 5</div>
+                    <a href="cartelera.html"><img src="imagen/e2.jpg" style="width:100%" height="20%"></a>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 5</div>
+                    <a href="cartelera.html"><img src="imagen/e3.jpg" style="width:100%" height="20%"></a>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 5</div>
+                    <a href="cartelera.html"><img src="imagen/e4.jpg" style="width:100%" height="20%"></a>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 5</div>
+                    <a href="cartelera.html"><img src="imagen/e5.jpg" style="width:100%" height="20%"></a>
+                </div>
+                <hr style="margin-bottom: 2em">
+
+                <!-- Botones para antes y despues -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Nombre del mundo -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <script src="js/js.js"></script>
+            </div>
+
+            <!-- ---------------------------------fin del Slides------------------------------------------ -->
+
+            <div class="slider" id="slider">
+                <h1 class="titulo2">PROXIMAMENTE</h1>
+                <ul>
+                    <li><img id="banner_dua" src="imagen/p3.jpg" style="width:100%" height="40%"></li>
+                    <li><img id="img1" src="imagen/p1.jpg" style="width:100%" height="40%"></li>
+                    <li><img id="img2" src="imagen/p8.jpg" style="width:100%" height="40%"></li>
+                    <li><img id="img3" src="imagen/p4.jpg" style="width:100%" height="40%"></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ---------------------------------fin del Slides proximos ------------------------------------------ -->
+        <div class="d">
+            <div class="footer">
+                <div class="footer-container">
+                    <div class="footer-menu">
+                        <div class="footer-columna">
+                            <h3>MÁS INFORMACION</h3>
+                            <ul>
+                                <a class="normal" href="#" target="_blank">
+                                    <li>Acerca de nosotros</li>
+                                </a>
+                                <a class="normal" href="#" target="_blank">
+                                    <li>Terminos y condiciones</li>
+                                </a>
+                                <a class="normal" href="#" target="_blank">
+                                    <li>Reglamento general</li>
+                                </a>
+                                <a class="normal" href="#" target="_blank">
+                                    <li>Nuestros Aliados</li>
+                                </a>
+                                <a class="normal" target="_blank" href="#">
+                                    <li>Reglamento general</li>
+                                </a>
+                            </ul>
+
+                        </div>
+
+                        <div class="footer-columna">
+                            <h3>Ayuda</h3>
+                            <ul>
+                                <a class="normal" href="#" target="_blank">
+                                    <li>Contáctanos: contacto@cinebit.com</li>
+                                </a>
+                                <a class="normal" href="#" target="_blank">
+                                    <li>Llamanos al PBX 1-0844300</li>
+                                </a>
+                                <a class="normal" href="#" target="_blank">
+                                    <li>Servicio al cliente</li>
+                                </a>
+                                <a class="normal" href="#" target="_blank">
+                                    <li>tipos de entrada </li>
+                                </a>
+                                <a class="normal" target="_blank" href="#">
+                                    <li>Horarios</li>
+                                </a>
+                            </ul>
+                        </div>
+                        
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

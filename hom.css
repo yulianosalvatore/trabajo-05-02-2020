@@ -1,0 +1,365 @@
+.grid {
+    display: grid;
+    grid-template-areas: "head head"
+                         "menu menu"
+                         "foot foot";
+  }
+  
+  .a { grid-area: head; }
+  .b { grid-area: menu;  }
+  .c { grid-area: menu;  }
+  .d { grid-area: foot; }
+
+
+
+*{
+    margin: 1px;
+    padding: 0px;
+
+}
+body{
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background-image: url(imagen/fondo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+/* nav */
+header{
+    width: 100%;
+    color: white;
+    background-color: rgba(36, 30, 23, 0.438);
+}
+#btn-menu{
+    display :none;
+}
+ 
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right:1px solid #fff;
+}
+
+header label:hover{
+    cursor: pointer;
+    background:rgba(36, 12, 12, 0.3);
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    text-decoration:none;
+    padding: 0;
+    display: flex;
+}
+.menu li{
+    border-radius: 1px solid #fff;
+    list-style: none;
+    text-decoration:none;
+}
+.menu li:hover{
+background: rgba(0,0,0,0.3);
+}
+
+.menu ul li a {
+    display: inline;
+    padding: 15px 20px;
+    color: #fff;
+    list-style: none;
+    text-decoration:none;
+}
+
+
+@media (max-width:768px){
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        background-color: rgba(36, 30, 23, 0.438);
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+        z-index: 7;
+        list-style: none;
+        
+    }
+.menu ul{
+flex-direction: column;
+}
+
+.menu li{
+border-top: 1px solid #fff;
+}
+.menu ul li :hover > ul li a{
+    display: block;
+    z-index: 2;
+}
+
+#btn-menu:checked ~ .menu{
+ margin:0;
+
+}
+
+
+}
+
+
+
+/* fin del nav */
+
+/* inicio contenido */
+/* ------------------------------------------------------------ Slider  1---------------------------------------------------------------- */
+
+
+.titulo2 {
+    margin: 5% 5% 0% 5%;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+
+.container {
+ 
+    position: relative;
+    width: 95%;
+    height: 10%;
+    padding-left:2%;
+}
+
+.mySlides {
+    display: none;
+}
+.cursor {
+    cursor: pointer;
+}
+.prev,.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* ----------------------------------------fin del  slider  1-------------------------------------------------------------- */
+
+/* ------------------------------------------------------------ Slider  2---------------------------------------------------------------- */
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 12000ms infinite alternate linear;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}
+
+.contenedor .slider {
+    height: 650px;
+    background: #000;
+}
+/* ----------------------------------------fin del  slider  2-------------------------------------------------------------- */
+
+/*---------------------------------------------------------------- Footer ----------------------------------------------------------------*/
+
+footer {
+    width: 100%;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.footer-container {
+    width: 100%;
+    background-color:rgba(36, 30, 23, 0.438);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff
+}
+
+.footer-menu {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-menu .footer-columna {
+    width: calc(100% / 3);
+    text-align: justify;
+}
+
+.footer-menu .footer-columna:nth-child(2) {
+    padding: 0 20px;
+}
+
+.footer-menu .footer-columna h3 {
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.footer-menu .footer-columna span p {
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+.footer-copy-redes {
+    width: 100%;
+    background: #000;
+    border-top: 3px solid #fff;
+}
+
+.footer-main {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-masters {
+    width: 33%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-redes {
+    width: 33%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-redes a img {
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40;
+    border-radius: 50%;
+    background: #fff;
+    color: #fff;
+    text-align: center
+}
+
+.footer-celular {
+    width: 37%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.creditos {
+    color: #ffffff;
+    text-align: center;
+}
+
+.icon-redes:hover {
+    transform: scale(1.2);
+    transition: 230ms;
+}
+
+.normal {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+.normal {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#fixedbutton {
+    display: none;
+    position: fixed;
+    top: 550px;
+    right: 0px;
+    z-index: 99;
+}
+
+#text {
+    z-index: 98;
+    position: absolute;
+    top: 280%;
+    left: 48%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: larger;
+}
+
